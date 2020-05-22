@@ -1,4 +1,4 @@
-import 'package:MoneRekho/data/static_data.dart';
+import 'package:MoneRekho/utils/static_data.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationWidget extends StatefulWidget {
