@@ -29,12 +29,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
+      resizeToAvoidBottomPadding: true,
       appBar: AppBar(
         title: Text('Remember'),
         centerTitle: true,
         elevation: Theme.of(context).appBarTheme.elevation,
         backgroundColor: Theme.of(context).appBarTheme.color,
-        
+        leading: Icon(Icons.account_box),
       ),
       body: _resolveBody(_curreentIndex),
       bottomNavigationBar: BottomNavigationWidget(resolveBodyIndex),

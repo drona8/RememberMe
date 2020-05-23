@@ -29,11 +29,11 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      backgroundColor: Colors.green,
-      unselectedItemColor: Colors.white70,
-      selectedItemColor: Colors.yellow,
+      backgroundColor: Theme.of(context).bottomAppBarColor,      
+      unselectedItemColor: Theme.of(context).scaffoldBackgroundColor,
+      selectedItemColor: Theme.of(context).indicatorColor,
       currentIndex: _selectedIndex,
-      iconSize: 20.0,
+      iconSize: Theme.of(context).accentIconTheme.size,
       onTap: (int index) {
         _bottomItemTapped(index);
       },

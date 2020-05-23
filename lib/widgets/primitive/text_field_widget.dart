@@ -1,30 +1,46 @@
 import 'package:flutter/material.dart';
 
 class TextFieldWidget extends StatelessWidget {
+  final String placeHolder;
+  final Function onSubmit;
+  final Function onValidate;
+  final IconData suffixIcon;
+  final bool isObsceurText;
+  final int maxLine;
+  final TextEditingController controller;
+  const TextFieldWidget({
+    this.placeHolder,
+    this.onSubmit,
+    this.onValidate,
+    this.suffixIcon,
+    this.isObsceurText,
+    this.maxLine,
+    this.controller,
+  });
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 20.0),
+      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 15.0),
       child: TextFormField(
-        maxLines: null,
+        maxLines: maxLine ?? null,
         autofocus: false,
-        controller: null,
+        controller: controller ?? null,
         readOnly: false,
         onTap: null,
         onChanged: null,
         validator: (String value) {
-          //todo
+          onValidate(value);
         },
         onSaved: (String value) {
-          //todo
+          onSubmit(value);
         },
-        obscureText: false,
+        obscureText: isObsceurText ?? false,
         decoration: InputDecoration(
-          labelText: null,
+          labelText: placeHolder,
           suffixIcon: Padding(
             padding: EdgeInsets.all(0.0),
             child: Icon(
-              null,
+              suffixIcon ?? null,
               color: Colors.blue,
             ),
           ),

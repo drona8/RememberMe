@@ -3,19 +3,24 @@ import 'package:flutter/material.dart';
 class AppTheme {
   AppTheme._();
   static const Color _lightPrimaryColor = Color.fromRGBO(244, 113, 127, 1);
-  static const Color _lightPrimaryVariantColor = Color(0xff005ad2);
+  static const Color _lightPrimaryVariantColor = Colors.green;
   static const Color _lightBackgroundColor = Color.fromRGBO(255, 255, 255, 1);
   static const Color _lightOnSecondaryColor = Colors.black;
+  static const Color _lightOnSelectedColor = Colors.yellow;
 
   static final ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: _lightBackgroundColor,
     bottomAppBarTheme: BottomAppBarTheme(
-      color: _lightPrimaryColor,
-      elevation: 0.0,
+      color: _lightPrimaryVariantColor,
     ),
+    accentIconTheme: IconThemeData(
+      size: 20.0,
+    ),
+    indicatorColor: _lightOnSelectedColor,
     buttonColor: _lightPrimaryColor,
+    bottomAppBarColor: _lightPrimaryVariantColor,
     appBarTheme: AppBarTheme(
-      color: Colors.green,
+      color: _lightPrimaryVariantColor,
       elevation: 0.0,
       textTheme: TextTheme(
         headline1: TextStyle(

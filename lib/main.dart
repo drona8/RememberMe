@@ -1,4 +1,5 @@
 import 'package:MoneRekho/screens/home_screen.dart';
+import 'package:MoneRekho/style/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: Theme.of(context),
+      theme: AppTheme.lightTheme,
       home: HomeScreen(),
     );
   }
