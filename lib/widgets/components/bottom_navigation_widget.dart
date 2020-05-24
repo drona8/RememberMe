@@ -34,6 +34,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
       selectedItemColor: Theme.of(context).indicatorColor,
       currentIndex: _selectedIndex,
       iconSize: Theme.of(context).accentIconTheme.size,
+      elevation: Theme.of(context).bottomAppBarTheme.elevation,
       onTap: (int index) {
         _bottomItemTapped(index);
       },

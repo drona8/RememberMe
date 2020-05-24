@@ -41,7 +41,7 @@ class TextFieldWidget extends StatelessWidget {
             padding: EdgeInsets.all(0.0),
             child: Icon(
               suffixIcon ?? null,
-              color: Colors.blue,
+              color: Theme.of(context).iconTheme.color,
             ),
           ),
           border: OutlineInputBorder(

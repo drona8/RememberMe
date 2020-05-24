@@ -46,6 +46,7 @@ class _AddNewBodyWidgetState extends State<AddNewBodyWidget> {
               TextFieldWidget(
                 placeHolder: "Title",
                 onSubmit: _proceed,
+                suffixIcon: Icons.title,
               ),
               SizedBox(
                 height: 15.0,
@@ -53,7 +54,7 @@ class _AddNewBodyWidgetState extends State<AddNewBodyWidget> {
               TextFieldWidget(
                 placeHolder: "Subtitle",
                 onSubmit: _proceed,
-                suffixIcon: Icons.title,
+                suffixIcon: Icons.subtitles,
               ),
               SizedBox(
                 height: 15.0,
