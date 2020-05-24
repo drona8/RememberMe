@@ -1,6 +1,6 @@
 # MoneRekho
 
-A simple Flutter project intended for employers/recruiters.
+A simple Flutter project developed to showcase flutter skill to the employers/recruiters/clients.
 
 This project is still In-Progress.
 
