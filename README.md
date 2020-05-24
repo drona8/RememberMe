@@ -1,6 +1,8 @@
 # MoneRekho
 
-A new Flutter project.
+A simple Flutter project intended for employers/recruiters.
+
+This project is still In-Progress.
 
 ## Getting Started
 
